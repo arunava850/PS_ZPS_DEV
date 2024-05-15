@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_FI_RAMP_ACCNT_PAY</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>RAMP To S4 Accnt Payable</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Asset Creation Failure</ENTRY>
+     <LENGTH>44</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>Data Failure</ENTRY>
+     <LENGTH>22</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>Acc Doc Creation Failure</ENTRY>
+     <LENGTH>48</LENGTH>
+    </item>
+   </TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE_ASSET_MASTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create ASSET master</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RAMP to S4 account payable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RAMP to S4 Account Payable</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Post document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Send Mail</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET_MASTER</CMPNAME>
+     <SCONAME>BAPIRET2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return Parameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET_MASTER</CMPNAME>
+     <SCONAME>EO_BCS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET_MASTER</CMPNAME>
+     <SCONAME>EV_ASSET</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Main Asset Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET_MASTER</CMPNAME>
+     <SCONAME>EV_SUBAS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Asset Subnumber</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET_MASTER</CMPNAME>
+     <SCONAME>GT_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RAMP to S4 Account Payable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>BAPIRET2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return Parameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>CT_ALV_OUTPUT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return Parameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>EV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>EV_FILETYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>R/2 table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>GT_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RAMP to S4 Account Payable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>IV_DOCTYP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Document Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>IV_TAXGL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>G/L Account Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>IV_THREHOLD</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Threshold amount</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <SCONAME>EO_BCS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Error while sending mail</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <SCONAME>EV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <SCONAME>EV_FILETYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>R/2 table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <SCONAME>GT_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>RAMP to S4 Account Payable</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

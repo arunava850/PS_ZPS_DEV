@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZDATGL</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>ZDATGL</OBJ_NAME_M>
+     <HASH_ID>4020233A1D45862C38FFF1BE61B826B44F91237F</HASH_ID>
+     <ID>&lt;type&gt; ZDATGL urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZDATGL</IFR_NAME>
+     <IFR_NSPCE>urn:sap:btp:is:abapproxies</IFR_NSPCE>
+     <IFR_GNSPCE>urn:sap:btp:is:abapproxies</IFR_GNSPCE>
+     <GEN_VERS>0001</GEN_VERS>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>BACKENDMDR</GEN_APPL>
+     <X-ML_NSPCE>urn:sap:btp:is:abapproxies</X-ML_NSPCE>
+     <X-ML_NAME>ZDATGL</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZDATGL</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZDATGL</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZDATGL</OBJ_NAME2>
+     <ID>&lt;type&gt; ZDATGL urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>ZDATGL</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZDATGL</R3_NAME>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

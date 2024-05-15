@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZMSG</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+    <STEXT>Message class for custom messages</STEXT>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMSG</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>Profit center &amp;1 is not extended to company code &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMSG</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Client vendor &amp;1 is not extended to company code &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMSG</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Third Party GL is not maintained for JDE GL &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMSG</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Owned GL is not maintained for JDE GL &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMSG</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Engie vendor &amp;1 is not extended to company code &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZMSG</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>E78 vendor &amp;1 is not extended to company code &amp;2</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

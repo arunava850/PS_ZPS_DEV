@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZFI_CL_PAYMENT_PROPOSAL_WF</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Standard Logic for BAdI FI_PAYMENT_PROPOSAL_WF</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <RSTAT>P</RSTAT>
+    <MSG_ID>FBZ_WF</MSG_ID>
+   </VSEOCLASS>
+   <TPOOL>
+    <item>
+     <ID>I</ID>
+     <KEY>001</KEY>
+     <ENTRY>Or</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>002</KEY>
+     <ENTRY>and</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>003</KEY>
+     <ENTRY>To</ENTRY>
+     <LENGTH>10</LENGTH>
+    </item>
+    <item>
+     <ID>I</ID>
+     <KEY>004</KEY>
+     <ENTRY>Other Payments</ENTRY>
+     <LENGTH>132</LENGTH>
+    </item>
+   </TPOOL>
+   <I18N_TPOOL>
+    <item>
+     <LANGUAGE>D</LANGUAGE>
+     <TEXTPOOL>
+      <item>
+       <ID>I</ID>
+       <KEY>001</KEY>
+       <ENTRY>oder</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>002</KEY>
+       <ENTRY>und</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>003</KEY>
+       <ENTRY>bis</ENTRY>
+       <LENGTH>10</LENGTH>
+      </item>
+      <item>
+       <ID>I</ID>
+       <KEY>004</KEY>
+       <ENTRY>Sonstige Zahlungen</ENTRY>
+       <LENGTH>132</LENGTH>
+      </item>
+     </TEXTPOOL>
+    </item>
+   </I18N_TPOOL>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>C_DEFAULT_PACKAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Work Package in Workflow of Maintenance of Proposal Run</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>C_FIELD_LIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Structure with Field List for the Workflow Rules</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FILL_RANGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Fill Selection for the Assignment of Workflow Packages</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_DEFAULT_ACTORS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Agents per Company Code for the Default Package</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_WF_PACKAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Determine Workflow Package per Payment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_BHOST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Computer on Which the Background Job Is to Be Carried Out</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_SDLSTRTDT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Scheduled start date for background job</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_SDLSTRTTM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Scheduled start time for background Job</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_STRTIMMED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Immediate Execution of Background Job</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_USER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>User Name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_XMITD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Indicator: Schedule Post and Print</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>MV_XMITL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Indicator: Schedule Payment Lists Too</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SAVE_WF_PACKAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save Workflow Package of a Payment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_JOB_DETAILS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Predefine Details for Scheduling the Payment Program</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_RANGE</CMPNAME>
+     <SCONAME>CH_FIELD</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_RANGE</CMPNAME>
+     <SCONAME>CT_RANGE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selection Table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_RANGE</CMPNAME>
+     <SCONAME>E_AMOUNT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Is the Total Amount</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_RANGE</CMPNAME>
+     <SCONAME>E_LOWERCASE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Contains Lower Case</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_RANGE</CMPNAME>
+     <SCONAME>E_STABLE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Is the Same for All Payments</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_RANGE</CMPNAME>
+     <SCONAME>I_HIGH</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Upper Value</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FILL_RANGE</CMPNAME>
+     <SCONAME>I_LOW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Lower Value</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_DEFAULT_ACTORS</CMPNAME>
+     <SCONAME>ET_DEFAULT_ACTORS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table of Agents for the Payment Proposal</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WF_PACKAGE</CMPNAME>
+     <SCONAME>ES_REGUH_WFR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maintenance of Proposal Run: Workflow Rules (for Payt Run)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WF_PACKAGE</CMPNAME>
+     <SCONAME>INFORMATION_INCOMPLETE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data Required for the Rule Was Not Transferred</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WF_PACKAGE</CMPNAME>
+     <SCONAME>IS_ACCOUNT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Attrib. on the Basis of Which a Work Package Is Determined</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WF_PACKAGE</CMPNAME>
+     <SCONAME>IT_REGUH</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table of Payment Data from Payment Program</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WF_PACKAGE</CMPNAME>
+     <SCONAME>IT_REGUP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table of Edited Items from Payment Program</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_WF_PACKAGE</CMPNAME>
+     <SCONAME>I_AMOUNT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Total Amount in Local Currency with Plus/Minus Sign</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE_WF_PACKAGE</CMPNAME>
+     <SCONAME>IS_REGUH_WFR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Maintenance of Proposal Run: Workflow Rules (for Payt Run)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_JOB_DETAILS</CMPNAME>
+     <SCONAME>I_BHOST</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Computer on Which the Background Job Is to Be Carried Out</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_JOB_DETAILS</CMPNAME>
+     <SCONAME>I_SDLSTRTDT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Scheduled start date for background job</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_JOB_DETAILS</CMPNAME>
+     <SCONAME>I_SDLSTRTTM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Scheduled start time for background Job</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_JOB_DETAILS</CMPNAME>
+     <SCONAME>I_STRTIMMED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Immediate Execution of Background Job</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_JOB_DETAILS</CMPNAME>
+     <SCONAME>I_USER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>User Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_JOB_DETAILS</CMPNAME>
+     <SCONAME>I_XMITD</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Indicator: Schedule Post and Print</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_JOB_DETAILS</CMPNAME>
+     <SCONAME>I_XMITL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Indicator: Schedule Payment Lists Too</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

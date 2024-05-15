@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_FI_EBUILDR_S4_ACCPAY</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>eBuilder to S4 account pay interface</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>eBuilder to S4 Account Payable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET</CMPNAME>
+     <SCONAME>EV_ANLKL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Asset Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET</CMPNAME>
+     <SCONAME>EV_SUB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create sub asset - flag</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET</CMPNAME>
+     <SCONAME>IT_RET2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET</CMPNAME>
+     <SCONAME>IV_ANLN1</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Main Asset Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE_ASSET</CMPNAME>
+     <SCONAME>IV_SUBASSET</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Asset Subnumber</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>eBuilder to S4 Account Payable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>EV_ANLKL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Asset Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>EV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>IT_RET2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <SCONAME>EV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

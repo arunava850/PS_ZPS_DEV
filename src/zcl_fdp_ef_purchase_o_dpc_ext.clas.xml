@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_FDP_EF_PURCHASE_O_DPC_EXT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Data Provider Secondary Class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>POCUSTOMHDR_GET_ENTITY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>PO Custom Hdr entity</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>POCUSTOMHDR_GET_ENTITY</CMPNAME>
+     <SCONAME>/IWBEP/CX_MGW_BUSI_EXCEPTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>business exception in mgw</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POCUSTOMHDR_GET_ENTITY</CMPNAME>
+     <SCONAME>/IWBEP/CX_MGW_TECH_EXCEPTION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>mgw technical exception</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POCUSTOMHDR_GET_ENTITY</CMPNAME>
+     <SCONAME>ER_ENTITY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returning data</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POCUSTOMHDR_GET_ENTITY</CMPNAME>
+     <SCONAME>IO_REQUEST_OBJECT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>table of navigation paths</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POCUSTOMHDR_GET_ENTITY</CMPNAME>
+     <SCONAME>IT_KEY_TAB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>table for name value pairs</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POCUSTOMHDR_GET_ENTITY</CMPNAME>
+     <SCONAME>IT_NAVIGATION_PATH</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>table of navigation paths</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>ZDATA_FSV_TAB</OBJ_NAME>
+     <OBJECT_M>TTYP</OBJECT_M>
+     <OBJ_NAME_M>ZDATA_FSV_TAB</OBJ_NAME_M>
+     <HASH_ID>03687B80F21B6F616FEB440EF6D441F474C9110E</HASH_ID>
+     <ID>TableOf&lt;type&gt; DATA_FSV urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>DATA_FSV</IFR_NAME>
+     <IFR_NSPCE>urn:sap:btp:is:abapproxies</IFR_NSPCE>
+     <IFR_GNSPCE>urn:sap:btp:is:abapproxies</IFR_GNSPCE>
+     <GEN_VERS>0001</GEN_VERS>
+     <PREFIX>Z</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>BACKENDMDR</GEN_APPL>
+     <X-ML_NSPCE>urn:sap:btp:is:abapproxies</X-ML_NSPCE>
+     <X-ML_NAME>DATA_FSV</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TTYP</OBJECT>
+     <OBJ_NAME>ZDATA_FSV_TAB</OBJ_NAME>
+     <OBJECT1>TTYP</OBJECT1>
+     <OBJ_NAME1>ZDATA_FSV_TAB</OBJ_NAME1>
+     <OBJECT2>TTYP</OBJECT2>
+     <OBJ_NAME2>ZDATA_FSV_TAB</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZDATA_FSV</OBJ_NAME_R>
+     <ID>TableOf&lt;type&gt; DATA_FSV urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_TYPE>TableOftype</IFR_TYPE>
+     <IFR_NAME>DATA_FSV</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TTYP</R3_TYPE>
+     <R3_NAME>ZDATA_FSV_TAB</R3_NAME>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

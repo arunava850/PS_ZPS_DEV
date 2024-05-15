@@ -1,0 +1,514 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Payment Medium Advice</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZ_FI_PAYMEDIUM_ADVTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZ_FI_PAYMEDIUM_ADV</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFI_PAYMEDIUM_PAYMADV_41</FUNCNAME>
+     <SHORT_TEXT>Payment Medium: Interface 41 - End (User Exit)</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_FPAYH</PARAMETER>
+       <DBFIELD>FPAYH</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_FPAYHX</PARAMETER>
+       <DBFIELD>FPAYHX</DBFIELD>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>C_WAERS</PARAMETER>
+       <DBFIELD>FPAYH-WAERS</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>C_SUM</PARAMETER>
+       <DBFIELD>FPAYH-RWBTR</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSCHA>
+     </CHANGING>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_FILE_OUTPUT</PARAMETER>
+       <DBSTRUCT>FPM_FILE</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_FPAYH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Payment medium: Payment data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_FPAYHX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Payment medium: payment data format</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_FILE_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_WAERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Currency Key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_SUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Amount paid in transaction currency</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZFI_PAYMEDIUM_SAMPLE_41</FUNCNAME>
+     <SHORT_TEXT>Payment Medium: Interface 41 - End (User Exit)</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_FPAYH</PARAMETER>
+       <DBFIELD>FPAYH</DBFIELD>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_FPAYHX</PARAMETER>
+       <DBFIELD>FPAYHX</DBFIELD>
+      </RSIMP>
+     </IMPORT>
+     <CHANGING>
+      <RSCHA>
+       <PARAMETER>C_WAERS</PARAMETER>
+       <DBFIELD>FPAYH-WAERS</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSCHA>
+      <RSCHA>
+       <PARAMETER>C_SUM</PARAMETER>
+       <DBFIELD>FPAYH-RWBTR</DBFIELD>
+       <REFERENCE>X</REFERENCE>
+      </RSCHA>
+     </CHANGING>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>T_FILE_OUTPUT</PARAMETER>
+       <DBSTRUCT>FPM_FILE</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_FPAYH</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Payment medium: Payment data</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_FPAYHX</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Payment medium: payment data format</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>T_FILE_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_WAERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Currency Key</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>C_SUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Amount paid in transaction currency</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZFI_PAYMEDIUM_PAYMADV_41>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_PAYMEDIUM_PAYMADV_41</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0004</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00017</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_PAYMEDIUM_PAYMADV_41</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Funktionsbaustein FP_PAYMEDIUM_SAMPLE_41 ist eine Vorlage für einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeitpunktbaustein der Schnittestelle 41 zur Erstellung von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zahlungsträgern mit dem &lt;DS:RE.SAPFPAYM&gt;generischen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zahlungsträgerprogramm&lt;/&gt; der Payment Medium Workbench.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zum Zeitpunkt 41 kann ein Trailer- oder Nachsatz zum Abschluß des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zahlungsträgers, der vom &lt;DS:FU.FI_PAYMEDIUM_SAMPLE_40&gt;Zeitpunkt 40&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erstellt wurde, ergänzt werden. Dazu wird die Tabelle T_FILE_OUTPUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ergänzt. Zur Ergänzung des Header- oder Vorsatzes stehen die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Importstrukturen I_FPAYH (Zahlungsdaten) und I_FPAYHX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Zahlungscustomizing) zur Verfügung. Mit den Exportparamtern E_WAERS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Währung) und E_SUM (Summe der Zahlungsbeträge) kann der erzeugte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zahlungsträger für die &lt;DS:TRAN.FDTA&gt;Zahlungsträger- oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>DTA-Verwaltung&lt;/&gt; näher spezifiziert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Dokumentation des IMG-Punktes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:SIMG.ACPY_VC_TFPM042FC_DC&gt;Anpassen von Zahlungsträgerformaten&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erläutert in welchem Zusammenhang Zeitpunktbausteine verwendet werden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>können.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_PAYMEDIUM_PAYMADV_41</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0004</VERSION>
+      <TXTLINES>00014</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_PAYMEDIUM_PAYMADV_41</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The function module FP_PAYMEDIUM_SAMPLE_41 is a template for an event</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>module of interface 41 for creating payment mediums with the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:RE.SAPFPAYM&gt;generic payment medium program &lt;/&gt; of the Payment</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Medium Workbench.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>At event 41 a trailer or trailer label for closing the payment medium</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>created at &lt;DS:FU.FI_PAYMEDIUM_SAMPLE_40&gt;event 40&lt;/&gt; can be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>supplemented. Table T_FILE_OUTPUT is supplemented for this purpose.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Import structures I_FPAYH (Zahlungsdaten) and I_FPAYHX (payment</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>customizing) are available for supplementing the header or intent.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Export parameters E_WAERS (currency) and E_SUM (sum of payment amounts)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>can be used to specify the generated payment medium for the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:TRAN.FDTA&gt;payment medium or DTA administration&lt;/&gt; in more detail.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The documentation for the IMG step &lt;DS:SIMG.ACPY_VC_TFPM042FC_DC&gt;Adjust</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Payment Medium Format&lt;/&gt; explains how event modules can be used.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZFI_PAYMEDIUM_PAYMADV_41>
+   <LONGTEXTS_ZFI_PAYMEDIUM_SAMPLE_41>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_PAYMEDIUM_SAMPLE_41</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0004</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00017</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_PAYMEDIUM_SAMPLE_41</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der Funktionsbaustein FP_PAYMEDIUM_SAMPLE_41 ist eine Vorlage für einen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zeitpunktbaustein der Schnittestelle 41 zur Erstellung von</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zahlungsträgern mit dem &lt;DS:RE.SAPFPAYM&gt;generischen</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zahlungsträgerprogramm&lt;/&gt; der Payment Medium Workbench.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Zum Zeitpunkt 41 kann ein Trailer- oder Nachsatz zum Abschluß des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zahlungsträgers, der vom &lt;DS:FU.FI_PAYMEDIUM_SAMPLE_40&gt;Zeitpunkt 40&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erstellt wurde, ergänzt werden. Dazu wird die Tabelle T_FILE_OUTPUT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>ergänzt. Zur Ergänzung des Header- oder Vorsatzes stehen die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Importstrukturen I_FPAYH (Zahlungsdaten) und I_FPAYHX</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Zahlungscustomizing) zur Verfügung. Mit den Exportparamtern E_WAERS</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(Währung) und E_SUM (Summe der Zahlungsbeträge) kann der erzeugte</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Zahlungsträger für die &lt;DS:TRAN.FDTA&gt;Zahlungsträger- oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>DTA-Verwaltung&lt;/&gt; näher spezifiziert werden.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Die Dokumentation des IMG-Punktes</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:SIMG.ACPY_VC_TFPM042FC_DC&gt;Anpassen von Zahlungsträgerformaten&lt;/&gt;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>erläutert in welchem Zusammenhang Zeitpunktbausteine verwendet werden</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>können.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZFI_PAYMEDIUM_SAMPLE_41</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0004</VERSION>
+      <TXTLINES>00014</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZFI_PAYMEDIUM_SAMPLE_41</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The function module FP_PAYMEDIUM_SAMPLE_41 is a template for an event</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>module of interface 41 for creating payment mediums with the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:RE.SAPFPAYM&gt;generic payment medium program &lt;/&gt; of the Payment</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Medium Workbench.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>At event 41 a trailer or trailer label for closing the payment medium</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>created at &lt;DS:FU.FI_PAYMEDIUM_SAMPLE_40&gt;event 40&lt;/&gt; can be</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>supplemented. Table T_FILE_OUTPUT is supplemented for this purpose.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Import structures I_FPAYH (Zahlungsdaten) and I_FPAYHX (payment</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>customizing) are available for supplementing the header or intent.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Export parameters E_WAERS (currency) and E_SUM (sum of payment amounts)</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>can be used to specify the generated payment medium for the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>&lt;DS:TRAN.FDTA&gt;payment medium or DTA administration&lt;/&gt; in more detail.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U1</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>The documentation for the IMG step &lt;DS:SIMG.ACPY_VC_TFPM042FC_DC&gt;Adjust</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Payment Medium Format&lt;/&gt; explains how event modules can be used.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZFI_PAYMEDIUM_SAMPLE_41>
+  </asx:values>
+ </asx:abap>
+</abapGit>

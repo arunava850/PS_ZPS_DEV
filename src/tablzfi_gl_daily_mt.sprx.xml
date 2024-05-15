@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZFI_GL_DAILY_MT</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>ZFI_GL_DAILY_MT</OBJ_NAME_M>
+     <HASH_ID>180BDDFB42A2FCEC27A214606AACD1903C83E84D</HASH_ID>
+     <ID>&lt;message&gt; ZFI_GL_DAILY_MT urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>ZFI_GL_DAILY_MT</IFR_NAME>
+     <IFR_NSPCE>urn:sap:btp:is:abapproxies</IFR_NSPCE>
+     <IFR_GNSPCE>urn:sap:btp:is:abapproxies</IFR_GNSPCE>
+     <GEN_VERS>0001</GEN_VERS>
+     <CATEGORY>ifmmessage</CATEGORY>
+     <GEN_APPL>BACKENDMDR</GEN_APPL>
+     <X-ML_NSPCE>urn:sap:btp:is:abapproxies</X-ML_NSPCE>
+     <X-ML_NAME>ZFI_GL_DAILY_MT</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZFI_GL_DAILY_MT</OBJ_NAME>
+     <OBJECT1>FIEL</OBJECT1>
+     <OBJ_NAME1>ZFI_GL_DAILY_MT</OBJ_NAME1>
+     <OBJECT2>FIEL</OBJECT2>
+     <OBJ_NAME2>ZFI_GL_DAILY_MT</OBJ_NAME2>
+     <OBJECT_R>TABL</OBJECT_R>
+     <OBJ_NAME_R>ZDATA11</OBJ_NAME_R>
+     <ID>&lt;part&gt; ZFI_GL_DAILY_MT &lt;message&gt; ZFI_GL_DAILY_MT urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_TYPE>part</IFR_TYPE>
+     <IFR_NAME>ZFI_GL_DAILY_MT</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>FIEL</R3_TYPE>
+     <R3_NAME>ZFI_GL_DAILY_MT</R3_NAME>
+     <R3_SEQNUM>000001</R3_SEQNUM>
+    </item>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZFI_GL_DAILY_MT</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZFI_GL_DAILY_MT</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZFI_GL_DAILY_MT</OBJ_NAME2>
+     <ID>&lt;message&gt; ZFI_GL_DAILY_MT urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_TYPE>message</IFR_TYPE>
+     <IFR_NAME>ZFI_GL_DAILY_MT</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZFI_GL_DAILY_MT</R3_NAME>
+     <CATEGORY>ifmmessage</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

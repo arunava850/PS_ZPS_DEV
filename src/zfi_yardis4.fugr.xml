@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Yardi To S4 interface</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFI_YARDIS4TOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFI_YARDIS4</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFI_YARDI_S4_GLPOST_PROXY</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Yardi to S4 GL posting</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ET_DATA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZFIT_YARDI_S4_GL_POST</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>BAPIRET2</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ET_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Yardi To S4 GL Postings Proxy</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BAPIRET2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return table</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

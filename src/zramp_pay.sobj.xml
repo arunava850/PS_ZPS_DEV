@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SOBJ" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <SWOTOL>
+    <SWOTOL>
+     <OBJTYPE>ZRAMP_PAY</OBJTYPE>
+     <AREA>*ROOT</AREA>
+     <AREACLASS>04</AREACLASS>
+     <MAINENTRY>X</MAINENTRY>
+    </SWOTOL>
+   </SWOTOL>
+   <TOJTB>
+    <TOJTB>
+     <NAME>ZRAMP_PAY</NAME>
+     <ACTIVELANG>E</ACTIVELANG>
+     <PROGNAME>ZFI_RAMP_PAY</PROGNAME>
+     <EDITELEM>Ramp_Pay</EDITELEM>
+     <EPRIMETHOD>Display</EPRIMETHOD>
+     <APPLIC>F</APPLIC>
+     <CREA_REL>757</CREA_REL>
+     <CHAN_REL>757</CHAN_REL>
+     <OBJTYPECLS>01</OBJTYPECLS>
+     <MODELONLY>X</MODELONLY>
+    </TOJTB>
+   </TOJTB>
+   <TOJTT>
+    <TOJTT>
+     <NAME>ZRAMP_PAY</NAME>
+     <LANGUAGE>E</LANGUAGE>
+     <NTEXT>Ramp Pay</NTEXT>
+     <STEXT>ZRAMP_PAY</STEXT>
+    </TOJTT>
+   </TOJTT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

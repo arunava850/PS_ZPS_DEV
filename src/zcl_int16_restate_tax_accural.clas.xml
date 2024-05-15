@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_INT16_RESTATE_TAX_ACCURAL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>OneSource to S/4HANA – Inbound Real Estate Tax Accrual</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>post document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Send Mail</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_MAIL_NEW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>send mail</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>GT_RETURN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>GV_BLART</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Document Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>GV_BUDAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Posting Date in the Document</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>GV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>GV_TAXGL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>G/L Account Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <SCONAME>GV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_NEW</CMPNAME>
+     <SCONAME>EO_BCS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exception Error while sending mail</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_NEW</CMPNAME>
+     <SCONAME>GT_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Inbound Real Estate Tax Accrual</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_NEW</CMPNAME>
+     <SCONAME>GV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

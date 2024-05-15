@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>FI inbound interfaces</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFI_INBF01</SOBJ_NAME>
+    <SOBJ_NAME>LZFI_INBTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFI_INB</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFI_RAMP_INB_ACNT_PAY</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Ramp Inbound Interface</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_INPUT</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZFI_RAMP_INB_ACNT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <TYP>FLAG</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_INPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RAMP Inbound Account information</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_ERROR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>General Flag</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

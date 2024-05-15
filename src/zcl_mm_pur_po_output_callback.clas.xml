@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_MM_PUR_PO_OUTPUT_CALLBACK</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Call Back class for PO Output determination</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <WITH_UNIT_TESTS>X</WITH_UNIT_TESTS>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PARTNER_SUPPLIER_DATA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Gets supplier details</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PERFORM_AUTHORITY_CHECK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Performs authority check</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PARTNER_SUPPLIER_DATA</CMPNAME>
+     <SCONAME>ES_PARTNER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Partner and Role</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PARTNER_SUPPLIER_DATA</CMPNAME>
+     <SCONAME>ES_PARTNER_ADDRESS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Partner Address Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PARTNER_SUPPLIER_DATA</CMPNAME>
+     <SCONAME>IV_EBELN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Purchasing Document Number</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

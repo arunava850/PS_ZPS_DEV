@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Output Profit/Cost Centers</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZCA_PCTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZCA_PC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZCA_OUTPUT_PC</FUNCNAME>
+     <SHORT_TEXT>Output Profit/Cost centers</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_PCENTERS</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR10</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PC_FLAG</PARAMETER>
+       <TYP>CHAR01</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LIST</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>CHAR01</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_OUTPUT</PARAMETER>
+       <DBSTRUCT>ZFI_PCCENTERS</DBSTRUCT>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_PCENTERS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Profit/Cost Center</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PC_FLAG</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>&apos;P&apos; - profit, &apos;C&apos;- Cost flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LIST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>&apos;L&apos;- List , &apos;S&apos; - Single flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Profit Centers</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

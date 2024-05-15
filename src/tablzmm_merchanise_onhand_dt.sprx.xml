@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_SPRX" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <PROXY_HEADER>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZMM_MERCHANISE_ONHAND_DT</OBJ_NAME>
+     <OBJECT_M>TABL</OBJECT_M>
+     <OBJ_NAME_M>ZMM_MERCHANISE_ONHAND_DT</OBJ_NAME_M>
+     <HASH_ID>ED129B73BAB84651B94FDBFD9DEDBB3C8D5A8C84</HASH_ID>
+     <ID>&lt;type&gt; MM_MERCHANISE_ONHAND_DT urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_GLOBAL>X</IFR_GLOBAL>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>MM_MERCHANISE_ONHAND_DT</IFR_NAME>
+     <IFR_NSPCE>urn:sap:btp:is:abapproxies</IFR_NSPCE>
+     <IFR_GNSPCE>urn:sap:btp:is:abapproxies</IFR_GNSPCE>
+     <GEN_VERS>0001</GEN_VERS>
+     <PREFIX>Z</PREFIX>
+     <CATEGORY>ifmtypedef</CATEGORY>
+     <GEN_APPL>BACKENDMDR</GEN_APPL>
+     <X-ML_NSPCE>urn:sap:btp:is:abapproxies</X-ML_NSPCE>
+     <X-ML_NAME>MM_MERCHANISE_ONHAND_DT</X-ML_NAME>
+    </item>
+   </PROXY_HEADER>
+   <PROXY_DATA>
+    <item>
+     <OBJECT>TABL</OBJECT>
+     <OBJ_NAME>ZMM_MERCHANISE_ONHAND_DT</OBJ_NAME>
+     <OBJECT1>TABL</OBJECT1>
+     <OBJ_NAME1>ZMM_MERCHANISE_ONHAND_DT</OBJ_NAME1>
+     <OBJECT2>TABL</OBJECT2>
+     <OBJ_NAME2>ZMM_MERCHANISE_ONHAND_DT</OBJ_NAME2>
+     <ID>&lt;type&gt; MM_MERCHANISE_ONHAND_DT urn:sap:btp:is:abapproxies urn:sap:btp:is:abapproxies</ID>
+     <IFR_TYPE>type</IFR_TYPE>
+     <IFR_NAME>MM_MERCHANISE_ONHAND_DT</IFR_NAME>
+     <IFR_SCALE>-2</IFR_SCALE>
+     <R3_TYPE>TABL</R3_TYPE>
+     <R3_NAME>ZMM_MERCHANISE_ONHAND_DT</R3_NAME>
+     <CATEGORY>ifmtypedef</CATEGORY>
+    </item>
+   </PROXY_DATA>
+  </asx:values>
+ </asx:abap>
+</abapGit>

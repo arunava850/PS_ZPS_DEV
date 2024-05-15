@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZFI_RETURN_NAME</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>CHAR39</DOMNAME>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>One Source Interface - Return Name</DDTEXT>
+    <REPTEXT>Return Name</REPTEXT>
+    <SCRTEXT_S>Ret. Name</SCRTEXT_S>
+    <SCRTEXT_M>Return Name</SCRTEXT_M>
+    <SCRTEXT_L>Return Name</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+    <LTRFLDDIS>X</LTRFLDDIS>
+   </DD04V>
+  </asx:values>
+ </asx:abap>
+</abapGit>

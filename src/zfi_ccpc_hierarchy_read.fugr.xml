@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Profit Center and Cost Center Hierarchy</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFI_CCPC_HIERARCHY_READTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFI_CCPC_HIERARCHY_READ</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFI_CCPC_HIERARCHY_READ</FUNCNAME>
+     <SHORT_TEXT>Profit Center and Cost Center Hierarchy</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_SETCLASS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>SETCLASS</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_SUBCLASS</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPICO_GROUP-CO_AREA</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_SETNAME</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPICO_GROUP-GROUPNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_COL</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>I_ROW</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CHAR1</TYP>
+      </RSIMP>
+     </IMPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>OUTPUT</PARAMETER>
+       <DBSTRUCT>ZFI_CCPC_HIERARCHY_READ</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>OUTPUT_COL</PARAMETER>
+       <TYPES>O</TYPES>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZFI_CCPC_HIERARCHY_READ_COL</TYP>
+      </RSTBL>
+      <RSTBL>
+       <PARAMETER>NODES</PARAMETER>
+       <DBSTRUCT>BAPISET_HIER</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <EXCEPTION>
+      <RSEXC>
+       <EXCEPTION>INVALID_SETCLASS</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_SELECTION_ROW_COL</EXCEPTION>
+      </RSEXC>
+      <RSEXC>
+       <EXCEPTION>INVALID_INPUT</EXCEPTION>
+      </RSEXC>
+     </EXCEPTION>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_SETCLASS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Set Class</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_SUBCLASS</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Controlling Area</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_SETNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Group Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_COL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>I_ROW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Single-Character Flag</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUTPUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Cost and Profit center hierarchy read</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>OUTPUT_COL</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Cost and Profit center hierarchy read</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>NODES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Interface Structure for Groups - Hierarchy Table</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_SETCLASS</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Allowed only either 0101 or 0106</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_SELECTION_ROW_COL</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Either row or col must be selected</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>INVALID_INPUT</PARAMETER>
+       <KIND>X</KIND>
+       <STEXT>Select either Row or Column</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

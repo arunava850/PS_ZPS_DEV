@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>DMC for Suppliers</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZDMC_SUPPLTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZDMC_SUPPL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZDMC_MIG_BP_CVI_CREATE</FUNCNAME>
+     <SHORT_TEXT>RFC for creating new BP with CVI and new segments insertion</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CVIS_EI_EXTERN_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_EXT_BP_CEN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CMDS_EI_BP_CEN_EXT_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_EXT_CUST_CEN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CMDS_EI_CUST_CEN_EXT_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_EXT_VEND_CEN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CMDS_EI_VEND_CEN_EXT_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_SUPPRESS_TAXJUR_CHECK</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BOOLEAN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PROCESSING_MODE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>CMD_BP_MIGRATE_PROCESSING_TYPE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TEST_RUN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BOOLEAN</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_EXT_CUST_CMP_COD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CMDS_EI_CUST_CMP_COD_EXT_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_EXT_CUST_SALES</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CMDS_EI_CUST_SALES_EXT_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_EXT_SUPP_CMP_COD</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CMDS_EI_SUPP_CMP_COD_EXT_T</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_EXT_SUPP_PUR</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CMDS_EI_SUPP_PUR_EXT_T</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRETM</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_RETURN_NEW</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>FS4MIG_T_BAPIRET2</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>ET_KEY_MAPPING</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>MIG_CVIS_KEY_MAPPING_BP_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IT_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Inbound for Customer/Vendor Integration</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EXT_BP_CEN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Extension Incl. for Bus. Partner for S4 Migration API</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EXT_CUST_CEN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Extension Incl. for Customer Master for S4 Migration API</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EXT_VEND_CEN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Extension Incl. for Vendor Master for S4 Migration API</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_SUPPRESS_TAXJUR_CHECK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Boolean Variable (X=true, -=false, space=unknown)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PROCESSING_MODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>(undefined = insert, 1 = insert sales address dependent data only)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TEST_RUN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Boolean Variable (X=true, -=false, space=unknown)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EXT_CUST_CMP_COD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Extension Incl. for Cust company code for S4 Migration API</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EXT_CUST_SALES</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Extension Incl. for Customer sales area for S4 Migration API</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EXT_SUPP_CMP_COD</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Extension Incl. for Supp Company Code for S4 Migration API</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_EXT_SUPP_PUR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Extension Incl. for Supp Purchasing for S4 Migration API</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BAPIRETI Table Type for Multiple Objects</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_RETURN_NEW</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>BP Return Table Type during Migration</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_KEY_MAPPING</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Key Mapping Table Type for Sender ID and BP for Migration</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZDMC_MIG_BP_CVI_CREATE>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZDMC_MIG_BP_CVI_CREATE</OBJECT>
+      <LANGU>E</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0004</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00024</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZDMC_MIG_BP_CVI_CREATE</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>E</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00004</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>You can use this function module to create a business partner along with</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>customer and supplier when you migrate to SAP S/4HANA.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;PARAMETERS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Import</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IT_DATA – The core parameter that holds all the required data for</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>migration</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IT_EXT_BP_CEN -  You can use this parameter for Business Partner master</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>data (BUT000) extensibility</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IT_EXT_CUST_CEN - You can use this parameter for customer master data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(KNA1) extensibility</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IT_EXT_VEND_CEN - You can use this parameter for supplier master data</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>(LFA1) extensibility</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IV_SUPPRESS_TAXJUR_CHECK - By passing value ‘X’, you can suppress the</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>tax jurisdiction check during migration</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>IV_TEST_RUN – By passing value ‘X’, you can run the function module in</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>simulation mode so that you can capture possible errors before migration</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Export</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ET_RETURN_NEW – Returns all errors (if any) while creating business</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>partners.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>B1</TDFORMAT>
+       <TDLINE>ET_KEY_MAPPING – Returns the mapping between Sender ID with actual</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Business Partner number that is created in the system</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZDMC_MIG_BP_CVI_CREATE>
+  </asx:values>
+ </asx:abap>
+</abapGit>

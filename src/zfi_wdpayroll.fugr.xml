@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Workday payroll allocation</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZFI_WDPAYROLLTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZFI_WDPAYROLL</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZFI_WORKDAY_PAYROLL_ALLOC</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Workday Payroll Allocation</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>ET_DATA</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>ZFIT_WORKDAY_PAYROLL_ALLOC</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>BAPIRET2</PARAMETER>
+       <TYP>BAPIRET2_T</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>ET_DATA</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Sproxy TT/structures for workday payroll allocatopn</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>BAPIRET2</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Return table</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>Z_FI_WORKDAY_PAYROLL_ALLOC</FUNCNAME>
+     <SHORT_TEXT>Workday Payroll allocation</SHORT_TEXT>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

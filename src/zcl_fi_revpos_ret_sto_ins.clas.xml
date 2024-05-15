@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_FI_REVPOS_RET_STO_INS</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Revenue postings for retail storage and insurance</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>post document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>POST_INSURANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>post document</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>send mail</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Revenue postings for storage retails and insurance</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>EV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_DOCUMENT</CMPNAME>
+     <SCONAME>IT_RET2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_INSURANCE</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Revenue postings for storage retails and insurance</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>POST_INSURANCE</CMPNAME>
+     <SCONAME>IT_RET2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Return table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <SCONAME>ET_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Revenue postings for storage retails and insurance</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL</CMPNAME>
+     <SCONAME>EV_DL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
